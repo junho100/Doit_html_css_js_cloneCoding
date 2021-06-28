@@ -2,6 +2,10 @@
     margin : 0;
     padding : 0;
     box-sizing: border-box;
+    /* 박스 사이즈를 측정할 때에 padding을 고려하여 계산해서 보여준다. */
+}
+ul{
+    list-style: none;
 }
 #container{
     margin : 0 auto;
@@ -23,7 +27,28 @@ nav{
     float : right;
     width : 900px;
     height : 100px;
-    background-color: green;
+}
+#topMenu{
+    height : 60px;
+}
+#topMenu > li{
+    float : left;
+    /* 하위 ul 태그들은 부모 li 태그의 플로팅에 따라간다. */
+    position : relative;
+}
+#topMenu > li > a{
+    display : block;
+    /* 블록으로 지정하면 인라인 태그인 a 태그의 좁은 클릭 범위가 아니라 넓은 li태그의 범위만큼 클릭이 가능해진다. */
+    color : #fff;
+    font-weight : 600;
+    margin : 20px 60px;
+    /* 왜 예시코드에서는 padding을 준지 모르겠다. 메뉴 사이의 간격이라면 margin이 맞지 않을까? */
+}
+#topMenu > li > a > span{
+    font-size : 0.5em;
+}
+#topMenu > li > a:hover{
+    color : #000;
 }
 #slideShow{
     clear : both;
@@ -61,3 +86,7 @@ a{
     font-size : 40px;
     color : #fff
 }
+
+/* TODO{
+    nav 하위 메뉴 구현
+} */
