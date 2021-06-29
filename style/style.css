@@ -57,6 +57,7 @@ nav{
     width : 160px;
     background-color: rgba(255, 255, 255, 0.6);
     left : 20px;
+    z-index : 10;
 }
 #topMenu > li > ul > li{
     padding : 10px 10px 10px 20px;
@@ -74,8 +75,42 @@ nav{
     clear : both;
     width : 100%;
     height : 300px;
-    background-color: orange;
-    /* overflow: hidden; 왜다는지 알고 주석 취소 */
+    overflow: hidden;
+    position : relative;
+}
+#slides{
+    position : absolute;
+    height : 300px;
+}
+#slides > img{
+    width : 100%;
+    float : left;
+}
+button{
+    position : absolute;
+    height : 100%;
+    top : 0;
+    border : none;
+    padding : 20px;
+    font-weight: 800;
+    font-size : 24px;
+    color : #000;
+    opacity: 0.5;
+}
+button:hover{
+    background-color: #222;
+    color : #fff;
+    opacity: 0.6;
+    cursor : pointer;
+}
+button:focus{
+    outline: 0;
+}
+#prev{
+    left : 0;
+}
+#next{
+    right : 0;
 }
 #contents{
     width : 100%;
