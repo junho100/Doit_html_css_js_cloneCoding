@@ -35,6 +35,7 @@ nav{
     float : left;
     /* 하위 ul 태그들은 부모 li 태그의 플로팅에 따라간다. */
     position : relative;
+    margin : 40px 0px 0px 0px;
 }
 #topMenu > li > a{
     display : block;
@@ -49,6 +50,25 @@ nav{
 }
 #topMenu > li > a:hover{
     color : #000;
+}
+#topMenu > li > ul{
+    display : none;
+    position : absolute;
+    width : 160px;
+    background-color: rgba(255, 255, 255, 0.6);
+    left : 20px;
+}
+#topMenu > li > ul > li{
+    padding : 10px 10px 10px 20px;
+}
+#topMenu > li > ul > li > a{
+    padding : 8px;
+}
+#topMenu > li:hover > ul{
+    display : block;
+}
+#topMenu > li > ul > li > a:hover{
+    color : #f00;
 }
 #slideShow{
     clear : both;
@@ -86,7 +106,3 @@ a{
     font-size : 40px;
     color : #fff
 }
-
-/* TODO{
-    nav 하위 메뉴 구현
-} */
