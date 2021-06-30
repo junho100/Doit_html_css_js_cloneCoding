@@ -151,7 +151,7 @@ button:focus{
 }
 #notice > ul{
     list-style: disc;
-    margin-left : 30px;
+    margin-left : 50px;
 }
 #notice > ul > li{
     font-size : 16px;
@@ -167,7 +167,35 @@ button:focus{
     float : right;
     width : 600px;
     height : 100%;
-    background-color: skyblue;
+    margin-top: 35px;
+}
+#links > ul{
+    overflow : hidden;
+    padding : 0;
+}
+#links > ul > li{
+    float : left;
+    width : 33%;
+    text-align: center;
+    margin : 10px 0;
+}
+#links > ul > li > a > span{
+    display : block;
+    margin : 0 auto;
+    width : 150px;
+    height : 150px;
+    border-radius: 100%;
+    border : 1px solid #ddd;
+    line-height: 150px;
+}
+#quick-icon1{
+    background-image: url("../images/icon-1.jpg");
+}
+#quick-icon2{
+    background-image: url("../images/icon-2.jpg");
+}
+#quick-icon3{
+    background-image: url("../images/icon-3.jpg");
 }
 footer{
     width : 100%;
